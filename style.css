@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+/* NAVBAR SECTION STARTS */
+.top-nav{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 2px 7px -3px rgb(0 0 0);
+}
+
+.top-nav a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo-img{
+    width: 50px;
+    border-radius: 100%;
+}
+
+.middle{
+    flex: 1;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg{
+    width: 25px;
+}
+
+.middle .links{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+/* NAVBAR SECTION ENDS */
+
+
+/* HEADING */
+.heading h1{
+    margin-left: 10%;
+}
+
+/* BANNER SECTION STARTS */
+.out-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+    max-width: 89rem;
+   
+}
+
+.inner-box{
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.inner-box div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem;
+}
+
+.inner-box .arrow-icon{
+    color: white;
+    font-size: 27px;
+    display: none;
+    transition: 0.2s ease-in-out;
+}
+.first{
+    background: url(images/Drills.jpg) no-repeat center;
+    background-size:cover;
+    width: 20rem;
+    height: 30rem;
+    z-index: 1;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: none;
+}
+
+.second{
+    background: url(images/Mobility.jpg) no-repeat center;
+    background-size:cover;
+    width: 20rem;
+    height: 30rem;
+    z-index: 2;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-left: none;
+    border-right: none;
+}
+
+.third{
+    background: url(images/Strength.jpg) no-repeat center;
+    background-size:cover;
+    width: 49rem;
+    height: 30rem;
+    z-index: 3;
+    position: relative;
+    transition: 0.4s ease-in-out;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-left: none;
+}
+
+.first:hover{
+    width: 70rem;
+    z-index: 1000;
+}
+
+.second:hover{
+    width: 70rem;
+    z-index: 1000;
+}
+
+.third:hover{
+    width: 70rem;
+    z-index: 1000;
+}
+
+.inner-box:hover .arrow-icon{
+    display: block;
+}
+
+h2{
+    
+    font-size: 23px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: white;
+}
+
+h2 a:hover{
+    color: white;
+}
+
+/* BANNER SECTION ENDS */
+
+@media screen and (max-width:604px) {
+    .middle .links{
+        margin: 0 10px;
+    }
+}
+
